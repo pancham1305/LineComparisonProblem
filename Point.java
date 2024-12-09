@@ -14,4 +14,10 @@ public class Point {
     public double getY() {
         return y;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        Point t = (Point) o;
+        return (t.getX() == this.x) && (t.getY() == this.y);
+    }
 }
