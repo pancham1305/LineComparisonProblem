@@ -34,4 +34,10 @@ public class Line {
         return start.equals(line.start) && end.equals(line.end);
     }
 
+    public int compareTo(Object o) {
+        Line line = (Line) o;
+        double dist1 = this.length();
+        double dist2 = line.length();
+        return Double.compare(dist1, dist2);
+    }
 }
